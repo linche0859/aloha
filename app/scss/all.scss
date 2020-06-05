@@ -7,11 +7,14 @@
 @import 'material-icons.scss';
 
 // utils
-@import 'mixins/bem';
 @import 'utils/base';
 @import 'utils/help';
+@import 'mixins/bem';
+@import 'mixins/api';
 
 // layout
+@import 'layout/header';
+@import 'layout/footer';
 
 // pages
 @import 'pages/index';

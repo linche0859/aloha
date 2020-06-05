@@ -1,0 +1,33 @@
+/* 頁首
+-------------------------------------------------- */
+
+@include block(header) {
+  .navbar {
+    .navbar-toggler {
+      margin-left: 18px;
+    }
+    > .nav-link {
+      margin-right: 18px;
+    }
+    .navbar-brand {
+      @include media-breakpoint-up(md) {
+        margin-left: 39px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-left: 85px;
+      }
+    }
+    .collapse {
+      padding-left: 18px;
+      @include media-breakpoint-up(md) {
+        margin-right: 39px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-right: 85px;
+      }
+    }
+  }
+  .nav-link {
+    font-family: $font-family-roboto;
+  }
+}

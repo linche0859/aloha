@@ -4,6 +4,7 @@
 ul,
 ol {
   margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -13,4 +14,9 @@ a:hover {
 
 img {
   max-width: 100%;
+}
+
+.material-icons {
+  vertical-align: bottom;
+  cursor: pointer;
 }
