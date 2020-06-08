@@ -2,4 +2,44 @@
 -------------------------------------------------- */
 
 @include block(footer) {
+  .jumbotron {
+    @include media-breakpoint-up(md) {
+      padding: 92px 0;
+    }
+  }
+  // 贊助
+  @include element(subscribe) {
+    @include element(title) {
+      font-size: 1.5rem;
+      line-height: 36px;
+      font-family: $font-family-raleway;
+      @include media-breakpoint-up(md) {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+    }
+    form {
+      .form-control {
+        padding: 1rem 0 18px 21px;
+        line-height: 22px;
+        &::placeholder {
+          color: $custom-gray-400;
+        }
+      }
+      .btn {
+        right: 0;
+        bottom: 0;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  @include element(content) {
+    padding: 1.5rem 0;
+    @include media-breakpoint-up(lg) {
+      padding: 27px 0 26px;
+    }
+  }
 }

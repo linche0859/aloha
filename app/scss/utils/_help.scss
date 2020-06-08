@@ -15,6 +15,26 @@ $utilities: map-merge(
         lg: $line-height-lg,
       ),
     ),
+    'font-size': (
+      property: font-size,
+      class: fz,
+      values: (
+        sm: $font-size-sm,
+        base: $font-size-base,
+        lg: $font-size-lg,
+      ),
+    ),
+    'font-weight': (
+      responsive: true,
+      property: font-weight,
+      values: (
+        light: $font-weight-light,
+        lighter: $font-weight-lighter,
+        normal: $font-weight-normal,
+        bold: $font-weight-bold,
+        bolder: $font-weight-bolder,
+      ),
+    ),
     'background-color': (
       responsive: true,
       property: background-color,
@@ -40,11 +60,28 @@ $utilities: map-merge(
             'white': $white,
             'body': $body-color,
             'muted': $text-muted,
+            'black': $black,
             'black-50': rgba($black, 0.5),
             'white-50': rgba($white, 0.5),
             'reset': inherit,
           )
         ),
+    ),
+    'border-top': (
+      responsive: true,
+      property: border-top,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
+    ),
+    'border-bottom': (
+      responsive: true,
+      property: border-bottom,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
     ),
   ),
   $utilities

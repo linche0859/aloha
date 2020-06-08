@@ -23,6 +23,7 @@ $custom-gray-300: #00000061;
 $custom-gray-400: #00000099;
 $custom-gray-500: #000000de;
 $custom-gray-600: #121212;
+$custom-gray-700: #ffffffde;
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -306,7 +307,7 @@ $font-family-base: $font-family-opensans;
 // stylelint-enable value-keyword-case
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-lg: $font-size-base * 1.5; //$font-size-base * 1.25 !default;
 $font-size-sm: $font-size-base * 0.875 !default;
 
 $font-weight-lighter: lighter !default;
@@ -777,7 +778,7 @@ $navbar-padding-x: 0; //$spacer !default;
 
 $navbar-nav-link-padding-x: 0; //0.5rem !default;
 
-$navbar-brand-font-size: $font-size-lg !default;
+$navbar-brand-font-size: $font-size-base; //$font-size-lg !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $nav-link-height: $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;
 $navbar-brand-height: $navbar-brand-font-size * $line-height-base !default;
@@ -875,15 +876,15 @@ $pagination-disabled-border-color: $gray-300 !default;
 
 // Jumbotron
 
-$jumbotron-padding: 2rem !default;
+$jumbotron-padding: 1.5rem; //2rem !default;
 $jumbotron-color: null !default;
 $jumbotron-bg: $gray-200 !default;
 
 // Cards
 
-$card-spacer-y: 0.75rem !default;
-$card-spacer-x: 1.25rem !default;
-$card-border-width: $border-width !default;
+$card-spacer-y: 0; //0.75rem !default;
+$card-spacer-x: 0; //1.25rem !default;
+$card-border-width: 0; //$border-width !default;
 $card-border-radius: $border-radius !default;
 $card-border-color: rgba($black, 0.125) !default;
 $card-inner-border-radius: subtract(

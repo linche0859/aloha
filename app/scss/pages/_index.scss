@@ -1,0 +1,58 @@
+/* 首頁
+-------------------------------------------------- */
+
+@include block(index) {
+  // 輪播
+  .carousel {
+    img {
+      height: 315px;
+      object-fit: cover;
+      z-index: -1;
+      @include media-breakpoint-up(md) {
+        height: 320px;
+      }
+    }
+    .carousel-caption {
+      top: 50%;
+      bottom: auto;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      line-height: 3rem;
+      font-family: $font-family-raleway;
+      z-index: 0;
+      @include media-breakpoint-up(md) {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+    }
+    .material-icons {
+      z-index: 1;
+      @include media-breakpoint-up(md) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  // 搜尋
+  @include element(search) {
+    .card {
+      margin-top: -3.5rem;
+    }
+    .dropdown-toggle {
+      line-height: 22px;
+      &::after {
+        display: none;
+      }
+    }
+    .dropdown-menu {
+      right: 0;
+    }
+    .dropdown-item {
+      h3 {
+        line-height: 22px;
+      }
+    }
+  }
+}
