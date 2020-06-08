@@ -36,6 +36,7 @@ let envOptions = {
       `${nodePath}/bootstrap/scss`,
       `${nodePath}/swiper`,
       `${nodePath}/material-icons/iconfont`,
+      `${nodePath}/daterangepicker/`,
     ],
     path: `${distPath}/style`,
   },
@@ -49,6 +50,8 @@ let envOptions = {
       `${nodePath}/jquery/dist/**/jquery.slim.min.js`,
       `${nodePath}/bootstrap/dist/js/**/bootstrap.bundle.min.js`, // 已包含 popper.js
       `${nodePath}/swiper/js/swiper.min.js`,
+      `${nodePath}/daterangepicker/moment.min.js`,
+      `${nodePath}/daterangepicker/daterangepicker.js`,
     ],
     concat: 'vendors.js',
     path: `${distPath}/js`,

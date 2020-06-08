@@ -88,14 +88,15 @@ current: index
     </a>
   </div>
   <!-- 搜尋 -->
-  <div class="index__search">
+  <div class="index__search mb-7">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <div class="card mb-7 bg-secondary">
+        <div class="col-12 offset-md-1 col-md-10">
+          <div class="card bg-secondary">
             <div class="card-body p-4">
-              <form action="javascript:;" method="post">
-                <div class="form-group">
+              <form action="javascript:;" method="post" class="d-lg-flex">
+                <!-- 目的地 -->
+                <div class="form-group mb-3 mr-lg-3 mb-lg-0">
                   <div class="dropdown">
                     <button
                       class="btn dropdown-toggle d-flex align-items-center p-3 w-100 h-auto text-left bg-white text-custom-gray-400"
@@ -112,74 +113,161 @@ current: index
                     </button>
                     <div
                       class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton"
+                      aria-labelledby="dropdownDestination"
                     >
                       <a
-                        class="dropdown-item d-flex px-3 py-0"
+                        class="dropdown-item d-flex mb-3 px-3 py-0"
                         href="javascript:;"
                       >
-                        <span class="material-icons mr-3">
+                        <span class="material-icons mr-2">
                           star
                         </span>
                         <div class="flex-grow-1">
                           <h3 class="fz-base">Bangkok</h3>
-                          <p class="fz-sm text-custom-gray-400">Thailand</p>
+                          <p class="fz-sm lh-sm text-custom-gray-400">
+                            Thailand
+                          </p>
                         </div>
                       </a>
                       <a
-                        class="dropdown-item d-flex px-3 py-0"
+                        class="dropdown-item d-flex mb-3 px-3 py-0"
                         href="javascript:;"
                       >
-                        <span class="material-icons mr-3">
+                        <span class="material-icons mr-2">
                           star
                         </span>
                         <div class="flex-grow-1">
                           <h3 class="fz-base">Osaka</h3>
-                          <p class="fz-sm text-custom-gray-400">Japan</p>
+                          <p class="fz-sm lh-sm text-custom-gray-400">Japan</p>
                         </div>
                       </a>
                       <a
-                        class="dropdown-item d-flex px-3 py-0"
+                        class="dropdown-item d-flex mb-3 px-3 py-0"
                         href="javascript:;"
                       >
-                        <span class="material-icons mr-3">
+                        <span class="material-icons mr-2">
                           star
                         </span>
                         <div class="flex-grow-1">
                           <h3 class="fz-base">Roma</h3>
-                          <p class="fz-sm text-custom-gray-400">Italy</p>
+                          <p class="fz-sm lh-sm text-custom-gray-400">Italy</p>
                         </div>
                       </a>
                       <a
-                        class="dropdown-item d-flex px-3 py-0"
+                        class="dropdown-item d-flex mb-3 px-3 py-0"
                         href="javascript:;"
                       >
-                        <span class="material-icons mr-3">
+                        <span class="material-icons mr-2">
                           star
                         </span>
                         <div class="flex-grow-1">
                           <h3 class="fz-base">Paris</h3>
-                          <p class="fz-sm text-custom-gray-400">London</p>
+                          <p class="fz-sm lh-sm text-custom-gray-400">London</p>
                         </div>
                       </a>
                       <a
                         class="dropdown-item d-flex px-3 py-0"
                         href="javascript:;"
                       >
-                        <span class="material-icons mr-3">
+                        <span class="material-icons mr-2">
                           star
                         </span>
                         <div class="flex-grow-1">
                           <h3 class="fz-base">Reykjavik</h3>
-                          <p class="fz-sm text-custom-gray-400">Iceland</p>
+                          <p class="fz-sm lh-sm text-custom-gray-400">
+                            Iceland
+                          </p>
                         </div>
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="form-group"></div>
-                <div class="form-group"></div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <!-- 入住時間 -->
+                <div class="form-group mb-3 mr-lg-3 mb-lg-0">
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle d-flex align-items-center p-3 w-100 h-auto text-left bg-white text-custom-gray-400"
+                      type="button"
+                      id="dropdownCheckIn"
+                    >
+                      <span class="material-icons mr-3 text-black">
+                        date_range
+                      </span>
+                      Check-in / Check-out
+                    </button>
+                  </div>
+                </div>
+                <!-- 客人數 -->
+                <div class="form-group mb-3 mr-lg-3 mb-lg-0">
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle d-flex align-items-center p-3 w-100 h-auto text-left bg-white text-custom-gray-400"
+                      type="button"
+                      id="dropdownGuests"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <span class="material-icons mr-3 text-black">
+                        person
+                      </span>
+                      Guests
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownGuests">
+                      <li
+                        class="dropdown-item d-flex justify-content-between mb-3 px-3 py-0"
+                        href="javascript:;"
+                      >
+                        <h3 class="fz-base">Adult</h3>
+                        <div>
+                          <span class="material-icons">
+                            remove
+                          </span>
+                          <span class="mx-3">2</span>
+                          <span class="material-icons">
+                            add
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="dropdown-item d-flex justify-content-between mb-3 px-3 py-0"
+                        href="javascript:;"
+                      >
+                        <h3 class="fz-base">Child</h3>
+                        <div>
+                          <span class="material-icons">
+                            remove
+                          </span>
+                          <span class="mx-3">0</span>
+                          <span class="material-icons">
+                            add
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="dropdown-item d-flex justify-content-between px-3 py-0"
+                        href="javascript:;"
+                      >
+                        <h3 class="fz-base">Room</h3>
+                        <div>
+                          <span class="material-icons">
+                            remove
+                          </span>
+                          <span class="mx-3">1</span>
+                          <span class="material-icons">
+                            add
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary flex-lg-grow-1 w-100 w-lg-auto font-weight-bold"
+                >
+                  Submit
+                </button>
               </form>
             </div>
           </div>

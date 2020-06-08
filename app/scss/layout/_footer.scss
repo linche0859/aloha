@@ -37,9 +37,14 @@
   }
 
   @include element(content) {
-    padding: 1.5rem 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     @include media-breakpoint-up(lg) {
-      padding: 27px 0 26px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+    .dropdown-toggle:focus {
+      outline: none;
     }
   }
 }

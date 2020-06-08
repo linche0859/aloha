@@ -7,7 +7,6 @@
     img {
       height: 315px;
       object-fit: cover;
-      z-index: -1;
       @include media-breakpoint-up(md) {
         height: 320px;
       }
@@ -37,11 +36,18 @@
 
   // 搜尋
   @include element(search) {
+    .form-group {
+      @include media-breakpoint-up(lg) {
+        width: 25.21739%;
+      }
+    }
     .card {
       margin-top: -3.5rem;
+      border-radius: 0.5rem;
     }
     .dropdown-toggle {
       line-height: 22px;
+      @include text-truncate();
       &::after {
         display: none;
       }
@@ -53,6 +59,11 @@
       h3 {
         line-height: 22px;
       }
+    }
+    button[type='submit'] {
+      padding-top: 17px;
+      padding-bottom: 17px;
+      line-height: 22px;
     }
   }
 }

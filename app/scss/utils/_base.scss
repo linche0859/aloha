@@ -28,3 +28,12 @@ img {
   vertical-align: bottom;
   cursor: pointer;
 }
+
+.daterangepicker {
+  td.active {
+    background-color: $primary;
+    &:hover {
+      background-color: $primary;
+    }
+  }
+}
