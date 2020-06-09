@@ -105,6 +105,7 @@ current: index
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
+                      data-offset="0,8"
                     >
                       <span class="material-icons mr-3 text-black">
                         place
@@ -115,10 +116,7 @@ current: index
                       class="dropdown-menu"
                       aria-labelledby="dropdownDestination"
                     >
-                      <a
-                        class="dropdown-item d-flex mb-3 px-3 py-0"
-                        href="javascript:;"
-                      >
+                      <a class="dropdown-item d-flex" href="javascript:;">
                         <span class="material-icons mr-2">
                           star
                         </span>
@@ -129,10 +127,7 @@ current: index
                           </p>
                         </div>
                       </a>
-                      <a
-                        class="dropdown-item d-flex mb-3 px-3 py-0"
-                        href="javascript:;"
-                      >
+                      <a class="dropdown-item d-flex" href="javascript:;">
                         <span class="material-icons mr-2">
                           star
                         </span>
@@ -141,10 +136,7 @@ current: index
                           <p class="fz-sm lh-sm text-custom-gray-400">Japan</p>
                         </div>
                       </a>
-                      <a
-                        class="dropdown-item d-flex mb-3 px-3 py-0"
-                        href="javascript:;"
-                      >
+                      <a class="dropdown-item d-flex" href="javascript:;">
                         <span class="material-icons mr-2">
                           star
                         </span>
@@ -153,10 +145,7 @@ current: index
                           <p class="fz-sm lh-sm text-custom-gray-400">Italy</p>
                         </div>
                       </a>
-                      <a
-                        class="dropdown-item d-flex mb-3 px-3 py-0"
-                        href="javascript:;"
-                      >
+                      <a class="dropdown-item d-flex" href="javascript:;">
                         <span class="material-icons mr-2">
                           star
                         </span>
@@ -165,10 +154,7 @@ current: index
                           <p class="fz-sm lh-sm text-custom-gray-400">London</p>
                         </div>
                       </a>
-                      <a
-                        class="dropdown-item d-flex px-3 py-0"
-                        href="javascript:;"
-                      >
+                      <a class="dropdown-item d-flex" href="javascript:;">
                         <span class="material-icons mr-2">
                           star
                         </span>
@@ -207,6 +193,7 @@ current: index
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
+                      data-offset="0,8"
                     >
                       <span class="material-icons mr-3 text-black">
                         person
@@ -215,7 +202,7 @@ current: index
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownGuests">
                       <li
-                        class="dropdown-item d-flex justify-content-between mb-3 px-3 py-0"
+                        class="dropdown-item d-flex justify-content-between"
                         href="javascript:;"
                       >
                         <h3 class="fz-base">Adult</h3>
@@ -230,7 +217,7 @@ current: index
                         </div>
                       </li>
                       <li
-                        class="dropdown-item d-flex justify-content-between mb-3 px-3 py-0"
+                        class="dropdown-item d-flex justify-content-between"
                         href="javascript:;"
                       >
                         <h3 class="fz-base">Child</h3>
@@ -245,7 +232,7 @@ current: index
                         </div>
                       </li>
                       <li
-                        class="dropdown-item d-flex justify-content-between px-3 py-0"
+                        class="dropdown-item d-flex justify-content-between"
                         href="javascript:;"
                       >
                         <h3 class="fz-base">Room</h3>
@@ -275,4 +262,363 @@ current: index
       </div>
     </div>
   </div>
+  <!-- Top Choices -->
+  <section class="index__top mb-7 mb-lg-10">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="index__title mb-4 font-weight-bold">
+            Top Choices
+          </h2>
+          <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active px-3 px-md-4 font-weight-bold"
+                id="bali-tab"
+                data-toggle="tab"
+                href="#bali"
+                role="tab"
+                aria-controls="bali"
+                aria-selected="true"
+                >Bali<sup>128</sup></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link px-3 px-md-4 font-weight-bold"
+                id="okinawa-tab"
+                data-toggle="tab"
+                href="#okinawa"
+                role="tab"
+                aria-controls="okinawa"
+                aria-selected="false"
+                >Okinawa<sup>67</sup></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link px-3 px-md-4 font-weight-bold"
+                id="taipei-tab"
+                data-toggle="tab"
+                href="#taipei"
+                role="tab"
+                aria-controls="taipei"
+                aria-selected="false"
+                >Taipei<sup>53</sup></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content container" id="tabContent">
+      <div
+        class="tab-pane fade show active row flex-nowrap"
+        id="bali"
+        role="tabpanel"
+        aria-labelledby="bali-tab"
+      >
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide card col-9 col-md-5 col-lg-3">
+              <img
+                src="assets/images/siravit-phiwondee-xLor7ShIUAc-unsplash.jpg"
+                class="card-img-top mb-2"
+                alt="baliPhoto"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-2 font-weight-bold">Hotel Aqua</h5>
+                <div class="card-text">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons mr-1">star</span>
+                    <span class="index__top__score fz-sm">5.0</span>
+                    <smal class="index__top__reviews text-custom-gray-300">・2k reviews</small>
+                  </div>
+                  <div class="index__top__price mr-2 text-custom-gray-400 fz-sm">TWD 2,480 <del class="text-custom-gray-300">TWD 3,980</del></div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide card col-9 col-md-5 col-lg-3">
+              <img
+                src="assets/images/taylor-simpson-xfAaM-PXYVo-unsplash.jpg"
+                class="card-img-top mb-2"
+                alt="baliPhoto"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-2 font-weight-bold">Mr. Kawasaki Inn</h5>
+                <div class="card-text">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="index__top__score fz-sm">4.0</span>
+                    <small class="index__top__reviews text-custom-gray-300">・500 reviews</small>
+                  </div>
+                  <div class="index__top__price mr-2 text-custom-gray-400 fz-sm">TWD 3,380</div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide card col-9 col-md-5 col-lg-3">
+              <img
+                src="assets/images/jared-rice-AhiUnolb7cg-unsplash.jpg"
+                class="card-img-top mb-2"
+                alt="baliPhoto"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-2 font-weight-bold">
+                  Weekly Paradise
+                </h5>
+                <div class="card-text">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="index__top__score fz-sm">4.0</span>
+                    <small class="index__top__reviews text-custom-gray-300">・470 reviews</small>
+                  </div>
+                  <div class="index__top__price mr-2 text-custom-gray-400 fz-sm">TWD 4,780</div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide card col-9 col-md-5 col-lg-3">
+              <img
+                src="assets/images/daniel-dinuzzo-qCjolcMFaLI-unsplash.jpg"
+                class="card-img-top mb-2"
+                alt="baliPhoto"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-2 font-weight-bold">
+                  Beast Hotel
+                </h5>
+                <div class="card-text">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="index__top__score fz-sm">4.0</span>
+                    <small class="index__top__reviews text-custom-gray-300">・283 reviews</small>
+                  </div>
+                  <div class="index__top__price mr-2 text-custom-gray-400 fz-sm">TWD 1,980</div>
+                </div>
+              </div>
+            </li>
+            <li class="swiper-slide card col-9 col-md-5 col-lg-3">
+              <img
+                src="assets/images/siravit-phiwondee-xLor7ShIUAc-unsplash.jpg"
+                class="card-img-top mb-2"
+                alt="baliPhoto"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-2 font-weight-bold">Hotel Aqua</h5>
+                <div class="card-text">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="index__top__score fz-sm">5.0</span>
+                    <small class="index__top__reviews text-custom-gray-300">・2k reviews</small>
+                  </div>
+                  <div class="index__top__price mr-2 text-custom-gray-400 fz-sm">TWD 2,480 <del class="text-custom-gray-300">TWD 3,980</del></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next position-absolute d-none d-md-block">
+            <span class="material-icons">
+              chevron_right
+            </span>
+          </div>
+          <div class="swiper-button-prev position-absolute d-none d-md-block">
+            <span class="material-icons">
+              chevron_left
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade row flex-nowrap"
+        id="okinawa"
+        role="tabpanel"
+        aria-labelledby="okinawa-tab"
+      >
+        <div class="col-12">okinawa</div>
+      </div>
+      <div
+        class="tab-pane fade row flex-nowrap"
+        id="taipei"
+        role="tabpanel"
+        aria-labelledby="taipei-tab"
+      >
+        <div class="col-12">taipei</div>
+      </div>
+    </div>
+  </section>
+  <!-- 熱門景點 -->
+  <section class="index__popular mb-7 mb-lg-10">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="index__title mb-4 font-weight-bold">
+            Popular Destinations
+          </h2>
+        </div>
+      </div>
+      <ul class="row">
+        <li class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4">
+          <div class="card position-relative text-white">
+            <img src="assets/images/agathe-marty-SMwAfgzj-VU-unsplash.jpg" class="card-img" alt="popularPhoto">
+            <div class="card-img-overlay d-flex justify-content-between align-items-center">
+              <div>
+                <h5 class="card-title text-custom-gray-100 font-weight-bold">JAPAN</h5>
+                <p class="card-text fz-lg font-weight-bold">Osaka</p>
+              </div>
+              <span class="material-icons">
+                keyboard_arrow_down
+                </span>
+            </div>
+          </div>
+        </li>
+        <li class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4">
+          <div class="card position-relative text-white">
+            <img src="assets/images/david-emrich-EJvGBYjrwEA-unsplash.jpg" class="card-img" alt="popularPhoto">
+            <div class="card-img-overlay d-flex justify-content-between align-items-center">
+              <div>
+                <h5 class="card-title text-custom-gray-100 font-weight-bold">JAPAN</h5>
+                <p class="card-text fz-lg font-weight-bold">Kyoto</p>
+              </div>
+              <span class="material-icons">
+                keyboard_arrow_down
+                </span>
+            </div>
+          </div>
+        </li>
+        <li class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4">
+          <div class="card position-relative text-white">
+            <img src="assets/images/norris-niman-ABtmE3jhaPQ-unsplash.jpg" class="card-img" alt="popularPhoto">
+            <div class="card-img-overlay d-flex justify-content-between align-items-center">
+              <div>
+                <h5 class="card-title text-custom-gray-100 font-weight-bold">ICELAND</h5>
+                <p class="card-text fz-lg font-weight-bold">Reykjavík</p>
+              </div>
+              <span class="material-icons">
+                keyboard_arrow_down
+                </span>
+            </div>
+          </div>
+        </li>
+        <li class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4 mb-lg-0">
+          <div class="card position-relative text-white">
+            <img src="assets/images/alex-holyoake-kgA5cRwr5IE-unsplash.jpg" class="card-img" alt="popularPhoto">
+            <div class="card-img-overlay d-flex justify-content-between align-items-center">
+              <div>
+                <h5 class="card-title text-custom-gray-100 font-weight-bold">LONDON</h5>
+                <p class="card-text fz-lg font-weight-bold">Paris</p>
+              </div>
+              <span class="material-icons">
+                keyboard_arrow_down
+                </span>
+            </div>
+          </div>
+        </li>
+        <li class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0">
+          <div class="card position-relative text-white">
+            <img src="assets/images/christopher-czermak-gZKzBhsO6KY-unsplash.jpg" class="card-img" alt="popularPhoto">
+            <div class="card-img-overlay d-flex justify-content-between align-items-center">
+              <div>
+                <h5 class="card-title text-custom-gray-100 font-weight-bold">ITALY</h5>
+                <p class="card-text fz-lg font-weight-bold">Roma</p>
+              </div>
+              <span class="material-icons">
+                keyboard_arrow_down
+                </span>
+            </div>
+          </div>
+        </li>
+        <li class="col-12 col-md-6 col-lg-4">
+          <div class="card position-relative text-white">
+            <img src="assets/images/joshua-rawson-harris-S4ZkQykkeRs-unsplash.jpg" class="card-img" alt="popularPhoto">
+            <div class="card-img-overlay d-flex justify-content-between align-items-center">
+              <div>
+                <h5 class="card-title text-custom-gray-100 font-weight-bold">THAILAND</h5>
+                <p class="card-text fz-lg font-weight-bold">Bangkok</p>
+              </div>
+              <span class="material-icons">
+                keyboard_arrow_down
+                </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- 取得靈感 -->
+  <section class="index__inspiration mb-7 mb-lg-10">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="index__title d-flex justify-content-between align-items-center mb-4 font-weight-bold">
+            Get Inspiration
+            <button class="btn btn-outline-primary px-3 py-2">SEE MORE</button>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row flex-nowrap">
+        <div class="swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide card col-9 col-md-4">
+              <img
+                src="assets/images/dario-veronesi-lUO-BjCiZEA-unsplash.jpg"
+                class="card-img-top mb-3"
+                alt="inspirationPhoto"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-2 fz-md-lg lh-lg font-weight-bold">The fifth most visited country</h5>
+                <p class="card-text fz-md-base lh-lg text-custom-gray-400">
+                  Italy is the fifth most visited country in the world, with a total of 52.3 million…
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide card col-9 col-md-4">
+              <img
+                src="assets/images/kiril-dobrev-MB1YI7cLOG4-unsplash.jpg"
+                class="card-img-top mb-3"
+                alt="inspirationPhoto"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-2 fz-md-lg lh-lg font-weight-bold">Visit Thailand for Bangkok</h5>
+                <p class="card-text fz-md-base lh-lg text-custom-gray-400">
+                  Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…
+                </p>
+              </div>
+            </li>
+            <li class="swiper-slide card col-9 col-md-4">
+              <img
+                src="assets/images/jeff-finley-bK8Wlaq7NaA-unsplash.jpg"
+                class="card-img-top mb-3"
+                alt="inspirationPhoto"
+              />
+              <div class="card-body">
+                <h5 class="card-title mb-2 fz-md-lg lh-lg font-weight-bold">Lord of the Rings Tour</h5>
+                <p class="card-text fz-md-base lh-lg text-custom-gray-400">
+                  The national cuisine has been described as Pacific Rim, incorporating the…
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>

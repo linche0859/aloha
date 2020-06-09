@@ -2,6 +2,16 @@
 -------------------------------------------------- */
 
 @include block(index) {
+  // 標題
+  @include element(title) {
+    font-size: 1.5rem;
+    line-height: 36px;
+    font-family: $font-family-raleway;
+    @include media-breakpoint-up(md) {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
   // 輪播
   .carousel {
     img {
@@ -64,6 +74,104 @@
       padding-top: 17px;
       padding-bottom: 17px;
       line-height: 22px;
+    }
+  }
+
+  @include element(top) {
+    img {
+      height: 164px;
+      object-fit: cover;
+      @include media-breakpoint-up(md) {
+        height: 185px;
+      }
+      @include media-breakpoint-up(lg) {
+        height: 175px;
+      }
+    }
+    .nav-link {
+      font-size: 20px;
+      line-height: 1.5;
+      color: $custom-gray-400;
+      border-bottom: 2px solid $secondary;
+      @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+      }
+    }
+    .card-img-top {
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    .card-title {
+      line-height: 22px;
+    }
+    .card-text {
+      .material-icons {
+        font-size: 18px;
+      }
+    }
+    // 評分
+    @include element(score) {
+      line-height: 19px;
+    }
+    // 觀看數
+    @include element(reviews) {
+      font-size: 12px;
+      line-height: 17px;
+    }
+    // 售價
+    @include element(price) {
+      line-height: 19px;
+      del {
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  // 熱門景點
+  @include element(popular) {
+    img {
+      height: 78px;
+      object-fit: cover;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: transparent
+        linear-gradient(270deg, #00000000 0%, #000000 100%);
+      border-radius: 0.5rem;
+    }
+    .card-title {
+      font-size: 12px;
+      line-height: 17px;
+    }
+    .card-text {
+      line-height: 29px;
+      font-family: $font-family-raleway;
+    }
+  }
+
+  // 取得靈感
+  @include element(inspiration) {
+    img {
+      height: 181px;
+      object-fit: cover;
+    }
+    .card-img-top {
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    .card-title {
+      font-size: 20px;
+      font-family: $font-family-raleway;
+    }
+    .card-text {
+      font-size: 12px;
+      line-height: 18px;
     }
   }
 }
