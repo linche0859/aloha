@@ -17,6 +17,14 @@ $utilities: map-merge(
         auto: auto,
       ),
     ),
+    'viewport-height': (
+      responsive: true,
+      property: height,
+      class: vh,
+      values: (
+        100: 100vh,
+      ),
+    ),
     'line-height': (
       responsive: true,
       property: line-height,

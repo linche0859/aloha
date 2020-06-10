@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%- title %></title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Raleway:wght@700;800;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/all.css" />
+  </head>
+  <body>
+    <header class="simpleHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 justify-content-between">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <a class="navbar-brand py-lg-4" href="index.html">
+                <img src="assets/images/ic-logo-aloha.svg" alt="navbar-brand" />
+              </a>
+              <a href="index.html" class="nav-link d-md-none">
+                <span class="material-icons text-black">
+                  close
+                </span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <%- contents %>
+
+    <script src="js/vendors.js"></script>
+    <script src="js/all.js"></script>
+  </body>
+</html>

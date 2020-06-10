@@ -1,0 +1,89 @@
+---
+title: 首頁
+layout: ./app/layouts/simple-layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="login vh-md-100">
+  <section class="container h-100">
+    <div class="row h-100 flex-md-column justify-content-md-between">
+      <div class="col-12 offset-md-3 offset-lg-8 col-md-6 col-lg-4">
+        <h2 class="login__title mb-3 font-weight-bold">Login</h2>
+        <form action="javascript:;" class="mb-2">
+          <div class="form-group">
+            <label for="email" class="mb-1 lh-lg text-custom-gray-400"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="form-control py-3 h-auto"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="form-group mb-4">
+            <label for="password" class="mb-1 lh-lg text-custom-gray-400"
+              >Passwords</label
+            >
+            <input
+              type="password"
+              class="form-control py-3 h-auto"
+              id="password"
+            />
+          </div>
+          <div class="form-group">
+            <p class="login__privacy lh-lg text-custom-gray-400">
+              By signing in or creating an account, you agree with our
+              <a href="javascript:;">Terms & Conditions</a> and
+              <a href="javascript:;">Privacy Statement</a>
+            </p>
+          </div>
+          <div class="form-group mb-5">
+            <label
+              class="login__remember form-check-label position-relative d-flex lh-lg text-custom-gray-400"
+            >
+              <input
+                type="checkbox"
+                class="login__remember__checkbox position-absolute invisible"
+                checked
+              />
+              <span
+                class="material-icons text-primary login__remember--checked mr-1"
+              >
+                check_box
+              </span>
+              <span class="material-icons mr-1">
+                check_box_outline_blank
+              </span>
+              Remember me
+            </label>
+          </div>
+          <a
+            href="javascript:;"
+            class="btn btn-primary py-3 w-100 font-weight-bold lh-lg"
+          >
+            LOGIN
+          </a>
+        </form>
+        <p class="fz-sm lh-lg text-center text-custom-gray-400">
+          Don’t have an account yet?
+          <a href="javascript:;" class="font-weight-bold">Sign up</a>
+        </p>
+      </div>
+      <div
+        class="login__location offset-md-3 offset-lg-0 col-md-6 d-none d-md-flex justify-content-center align-items-end pb-4"
+      >
+        <div
+          class="d-flex align-items-center py-2 px-3 bg-custom-gray-600 text-white fz-sm lh-lg rounded"
+        >
+          <span class="material-icons mr-2">
+            place
+          </span>
+          Osaka Castel, Japan
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <div class="login__background position-absolute"></div> -->
+</main>
