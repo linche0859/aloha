@@ -11,7 +11,7 @@
   @include element(subscribe) {
     @include element(title) {
       font-size: 1.5rem;
-      line-height: 36px;
+      line-height: 1.5;
       font-family: $font-family-raleway;
       @include media-breakpoint-up(md) {
         font-size: 3rem;
@@ -21,7 +21,6 @@
     form {
       .form-control {
         padding: 1rem 0 18px 21px;
-        line-height: 22px;
         &::placeholder {
           color: $custom-gray-400;
         }
@@ -31,7 +30,6 @@
         bottom: 0;
         padding-top: 17px;
         padding-bottom: 17px;
-        line-height: 22px;
       }
     }
   }

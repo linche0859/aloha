@@ -6,3 +6,8 @@
     font-family: $font-family-roboto;
   }
 }
+
+// 簡易版型的頁首
+@include block(simpleHeader) {
+  z-index: 1;
+}

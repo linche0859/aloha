@@ -2,16 +2,12 @@
 -------------------------------------------------- */
 
 @include block(login) {
-  padding-top: 24px;
   @include media-breakpoint-up(md) {
-    background: url('../assets/images/matt-reames-xTAKAaPbFwM-unsplash.jpg')
-      center/cover no-repeat;
-    padding-top: 81.72px;
-    margin-top: -57.72px;
+    margin-top: -72px;
   }
   @include element(title) {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 3rem;
+    line-height: 4rem;
     font-family: $font-family-raleway;
   }
   @include element(privacy) {
@@ -36,6 +32,25 @@
   @include element(location) {
     .material-icons {
       font-size: 18px;
+    }
+  }
+  // 背景圖
+  @include element(background) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../assets/images/matt-reames-xTAKAaPbFwM-unsplash.jpg')
+      center/cover no-repeat;
+    z-index: -1;
+    @include media-breakpoint-up(lg) {
+      right: 36.32812%;
+    }
+  }
+  form {
+    legend {
+      font-size: 2rem;
+      font-family: $font-family-raleway;
     }
   }
 }

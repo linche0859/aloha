@@ -1,70 +1,80 @@
 ---
-title: 首頁
+title: 登入
 layout: ./app/layouts/simple-layout.ejs
 engine: ejs
 current: index
 ---
 
-<main class="login vh-md-100">
+<main class="login position-relative vh-md-100 pt-4 pt-md-13">
   <section class="container h-100">
-    <div class="row h-100 flex-md-column justify-content-md-between">
-      <div class="col-12 offset-md-3 offset-lg-8 col-md-6 col-lg-4">
-        <h2 class="login__title mb-3 font-weight-bold">Login</h2>
+    <div class="row h-100">
+      <div class="col-lg-6 d-none d-lg-block">
+        <h2 class="login__title mb-3 font-weight-extraBold">
+          An ideal hotel makes a wonderful Trip.
+        </h2>
+        <p class="fz-sm lh-lg text-custom-gray-400">
+          Discover your dream destination and hotel on ALOHA.com
+        </p>
+      </div>
+      <div class="col-12 offset-md-3 offset-lg-2 col-md-6 col-lg-4">
         <form action="javascript:;" class="mb-2">
-          <div class="form-group">
-            <label for="email" class="mb-1 lh-lg text-custom-gray-400"
-              >Email</label
-            >
-            <input
-              type="email"
-              class="form-control py-3 h-auto"
-              id="email"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div class="form-group mb-4">
-            <label for="password" class="mb-1 lh-lg text-custom-gray-400"
-              >Passwords</label
-            >
-            <input
-              type="password"
-              class="form-control py-3 h-auto"
-              id="password"
-            />
-          </div>
-          <div class="form-group">
-            <p class="login__privacy lh-lg text-custom-gray-400">
-              By signing in or creating an account, you agree with our
-              <a href="javascript:;">Terms & Conditions</a> and
-              <a href="javascript:;">Privacy Statement</a>
-            </p>
-          </div>
-          <div class="form-group mb-5">
-            <label
-              class="login__remember form-check-label position-relative d-flex lh-lg text-custom-gray-400"
-            >
-              <input
-                type="checkbox"
-                class="login__remember__checkbox position-absolute invisible"
-                checked
-              />
-              <span
-                class="material-icons text-primary login__remember--checked mr-1"
+          <fieldset>
+            <legend class="mb-3 lh-lg font-weight-bold">Login</legend>
+            <div class="form-group">
+              <label for="email" class="mb-1 lh-lg text-custom-gray-400"
+                >Email</label
               >
-                check_box
-              </span>
-              <span class="material-icons mr-1">
-                check_box_outline_blank
-              </span>
-              Remember me
-            </label>
-          </div>
-          <a
-            href="javascript:;"
-            class="btn btn-primary py-3 w-100 font-weight-bold lh-lg"
-          >
-            LOGIN
-          </a>
+              <input
+                type="email"
+                class="form-control py-3 h-auto"
+                id="email"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="form-group mb-4">
+              <label for="password" class="mb-1 lh-lg text-custom-gray-400"
+                >Passwords</label
+              >
+              <input
+                type="password"
+                class="form-control py-3 h-auto"
+                id="password"
+              />
+            </div>
+            <div class="form-group">
+              <p class="login__privacy lh-lg text-custom-gray-400">
+                By signing in or creating an account, you agree with our
+                <a href="javascript:;">Terms & Conditions</a> and
+                <a href="javascript:;">Privacy Statement</a>
+              </p>
+            </div>
+            <div class="form-group mb-5">
+              <label
+                class="login__remember form-check-label position-relative d-flex lh-lg text-custom-gray-400"
+              >
+                <input
+                  type="checkbox"
+                  class="login__remember__checkbox position-absolute invisible"
+                  checked
+                />
+                <span
+                  class="material-icons text-primary login__remember--checked mr-1"
+                >
+                  check_box
+                </span>
+                <span class="material-icons mr-1">
+                  check_box_outline_blank
+                </span>
+                Remember me
+              </label>
+            </div>
+            <a
+              href="javascript:;"
+              class="btn btn-primary py-3 w-100 font-weight-bold lh-lg"
+            >
+              LOGIN
+            </a>
+          </fieldset>
         </form>
         <p class="fz-sm lh-lg text-center text-custom-gray-400">
           Don’t have an account yet?
@@ -72,7 +82,7 @@ current: index
         </p>
       </div>
       <div
-        class="login__location offset-md-3 offset-lg-0 col-md-6 d-none d-md-flex justify-content-center align-items-end pb-4"
+        class="login__location offset-md-3 offset-lg-0 col-md-6 d-none d-md-flex justify-content-center justify-content-lg-start align-items-end pb-4"
       >
         <div
           class="d-flex align-items-center py-2 px-3 bg-custom-gray-600 text-white fz-sm lh-lg rounded"
@@ -85,5 +95,6 @@ current: index
       </div>
     </div>
   </section>
-  <!-- <div class="login__background position-absolute"></div> -->
+  <!-- 背景圖 -->
+  <div class="login__background position-absolute d-none d-md-block"></div>
 </main>
