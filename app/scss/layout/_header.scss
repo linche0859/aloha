@@ -4,6 +4,12 @@
 @include block(header) {
   .nav-link {
     font-family: $font-family-roboto;
+    .rounded-circle {
+      width: 24px;
+      height: 24px;
+      border: 2px solid $primary;
+      object-fit: cover;
+    }
   }
 }
 
