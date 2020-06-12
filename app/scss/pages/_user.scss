@@ -1,0 +1,49 @@
+/* 個人資料
+-------------------------------------------------- */
+
+@include block(user) {
+  @include element(title) {
+    font-family: $font-family-raleway;
+  }
+
+  // 使用者資訊
+  @include element(profile) {
+    .card {
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 0.5rem;
+        object-fit: cover;
+      }
+    }
+    .badge {
+      font-size: 12px;
+    }
+  }
+
+  // 使用者訂閱內容
+  @include element(booking) {
+    .nav-link {
+      color: $custom-gray-500;
+      &.active {
+        background-color: transparent;
+        color: $primary;
+      }
+    }
+    .card {
+      .card-img-top {
+        height: 226px;
+        object-fit: cover;
+        @include media-breakpoint-up(md) {
+          height: 186px;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 0.5rem;
+        }
+      }
+      .card-body {
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+      }
+    }
+  }
+}
