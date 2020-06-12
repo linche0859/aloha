@@ -1,0 +1,21 @@
+/* 預訂已收到
+-------------------------------------------------- */
+
+@include block(reservationReceived) {
+  @include element(title) {
+    font-size: $font-size-lg;
+    font-family: $font-family-raleway;
+    @include media-breakpoint-up(md) {
+      font-size: 2rem;
+    }
+  }
+  .container > .row {
+    padding-bottom: 3rem;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 387px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 163px;
+    }
+  }
+}

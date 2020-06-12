@@ -1,0 +1,77 @@
+---
+title: 預訂已收到
+layout: ./app/layouts/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="reservationReceived pt-4">
+  <section class="container">
+    <div class="row no-gutters border-bottom">
+      <div class="col-12 offset-lg-2 col-lg-8 mb-4 mb-md-5 pb-4 border-bottom">
+        <h2 class="reservationReceived__title mb-0 lh-lg font-weight-bold">
+          Reservation received!
+        </h2>
+      </div>
+      <div class="col-12 offset-lg-2 col-lg-8">
+        <ul class="mb-4 fz-sm fz-md-base lh-lg">
+          <li class="row no-gutters mb-4 pb-4 border-bottom">
+            <div class="col-4 col-md-3 col-lg-2 mb-3 font-weight-bold">
+              Guest
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 mb-3 text-custom-gray-400">
+              David Lin
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 mb-3 font-weight-bold">
+              Email
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 mb-3 text-custom-gray-400">
+              david0520@mail.com.tw
+              <a href="javascript:;" class="d-block d-md-inline ml-md-3"
+                >Confirmation email sent to this address</a
+              >
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 font-weight-bold">Phone</div>
+            <div class="col-8 col-md-9 col-lg-10 text-custom-gray-400">
+              Deluxe Suite with Pool / 2 nights
+            </div>
+          </li>
+          <li class="row no-gutters mb-4 pb-4 border-bottom">
+            <div class="col-4 col-md-3 col-lg-2 font-weight-bold">Room</div>
+            <div class="col-8 col-md-9 col-lg-10 text-custom-gray-400">
+              Deluxe Suite with Pool / 2 nights
+            </div>
+          </li>
+          <li class="row no-gutters pb-4 border-bottom">
+            <div class="col-4 col-md-3 col-lg-2 mb-3 font-weight-bold">
+              Check-In
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 mb-3 text-custom-gray-400">
+              Wednesday, 17 June 2020
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 font-weight-bold">
+              Check-out
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 text-custom-gray-400">
+              Friday, 19 June 2020
+            </div>
+          </li>
+        </ul>
+        <div class="text-right">
+          <a
+            href="edit-reservation.html"
+            class="btn btn-outline-primary mb-2 mb-md-0 py-3 px-5 w-100 w-md-auto font-weight-bold lh-lg"
+            >EDIT RESERVATION</a
+          >
+          <a
+            href="index.html"
+            class="btn btn-primary py-3 px-5 w-100 w-md-auto font-weight-bold lh-lg"
+            >HOMEPAGE</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/reservation-received.js"></script>

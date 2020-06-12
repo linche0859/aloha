@@ -70,22 +70,24 @@ function vendorJS() {
 }
 
 function babel() {
-  return gulp
-    .src(envOptions.js.src)
-    .pipe($.sourcemaps.init())
-    .pipe(
-      $.babel({
-        presets: ['@babel/env'],
-      })
-    )
-    .pipe($.concat(envOptions.js.concat))
-    .pipe($.sourcemaps.write('.'))
-    .pipe(gulp.dest(envOptions.js.path))
-    .pipe(
-      browserSync.reload({
-        stream: true,
-      })
-    );
+  return (
+    gulp
+      .src(envOptions.js.src)
+      .pipe($.sourcemaps.init())
+      .pipe(
+        $.babel({
+          presets: ['@babel/env'],
+        })
+      )
+      // .pipe($.concat(envOptions.js.concat))
+      .pipe($.sourcemaps.write('.'))
+      .pipe(gulp.dest(envOptions.js.path))
+      .pipe(
+        browserSync.reload({
+          stream: true,
+        })
+      )
+  );
 }
 
 function browser() {
