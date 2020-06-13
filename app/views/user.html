@@ -5,9 +5,7 @@ engine: ejs
 current: index
 ---
 
-<main
-  class="user container pt-4 pb-7 pb-md-8 border-bottom border-bottom-md-0 border-bottom-lg"
->
+<main class="user container pt-4">
   <div class="row flex-lg-row-reverse">
     <!-- 使用者資訊 -->
     <section class="user__profile col-12 col-lg-4 mb-7 mb-lg-0">
@@ -94,8 +92,8 @@ current: index
         </div>
       </div>
     </section>
-    <!-- 使用者訂閱內容 -->
-    <section class="user__booking col-12 col-lg-8">
+    <!-- 預訂內容 -->
+    <section class="user__booking col-12 col-lg-8 pb-lg-0">
       <h2 class="user__title mb-3 mb-md-4 fz-lg lh-lg">
         My Bookings
       </h2>
@@ -132,10 +130,10 @@ current: index
           role="tabpanel"
           aria-labelledby="pills-upcoming-tab"
         >
-          <ul class="row no-gutters">
-            <li class="col-12 mb-4 pb-md-4 border-bottom-md">
+          <ul>
+            <li class="mb-4 pb-md-4 border-bottom-md">
               <div
-                class="card row flex-column flex-md-row align-items-md-center"
+                class="card row no-gutters flex-column flex-md-row align-items-md-center"
               >
                 <div class="col-12 col-md-5">
                   <img
@@ -190,9 +188,9 @@ current: index
                 </div>
               </div>
             </li>
-            <li class="col-12">
+            <li>
               <div
-                class="card row flex-column flex-md-row align-items-md-center"
+                class="card row no-gutters flex-column flex-md-row align-items-md-center"
               >
                 <div class="col-12 col-md-5">
                   <img
@@ -259,5 +257,9 @@ current: index
         </div>
       </div>
     </section>
+    <!-- 共白區域，用於推擠內容至 footer 空間 -->
+    <div class="col-12 border-bottom border-bottom-md-0">
+      <div class="user__empty border-bottom-lg"></div>
+    </div>
   </div>
 </main>

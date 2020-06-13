@@ -21,7 +21,7 @@
     }
   }
 
-  // 使用者訂閱內容
+  // 預訂內容
   @include element(booking) {
     .nav-link {
       color: $custom-gray-500;
@@ -44,6 +44,17 @@
         border-bottom-left-radius: 0.5rem;
         border-bottom-right-radius: 0.5rem;
       }
+    }
+  }
+
+  // 共白區域
+  @include element(empty) {
+    padding-bottom: 3rem;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 54px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 134px;
     }
   }
 }

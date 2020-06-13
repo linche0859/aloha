@@ -9,7 +9,7 @@
       font-size: 2rem;
     }
   }
-  .container > .row {
+  @include element(btnGroup) {
     padding-bottom: 3rem;
     @include media-breakpoint-up(md) {
       padding-bottom: 387px;

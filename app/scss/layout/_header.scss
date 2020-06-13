@@ -2,6 +2,7 @@
 -------------------------------------------------- */
 
 @include block(header) {
+  z-index: 1;
   .nav-link {
     font-family: $font-family-roboto;
     .rounded-circle {
@@ -11,9 +12,4 @@
       object-fit: cover;
     }
   }
-}
-
-// 簡易版型的頁首
-@include block(simpleHeader) {
-  z-index: 1;
 }
