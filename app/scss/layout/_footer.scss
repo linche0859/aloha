@@ -9,15 +9,6 @@
   }
   // 贊助
   @include element(subscribe) {
-    @include element(title) {
-      font-size: 1.5rem;
-      line-height: 1.5;
-      font-family: $font-family-raleway;
-      @include media-breakpoint-up(md) {
-        font-size: 3rem;
-        line-height: 4rem;
-      }
-    }
     form {
       .form-control {
         padding: 1rem 0 18px 21px;

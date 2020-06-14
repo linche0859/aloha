@@ -5,11 +5,6 @@
   @include media-breakpoint-up(md) {
     margin-top: -72px;
   }
-  @include element(title) {
-    font-size: 3rem;
-    line-height: 4rem;
-    font-family: $font-family-raleway;
-  }
   @include element(privacy) {
     font-size: 12px;
   }
@@ -44,12 +39,6 @@
     .bg-cover {
       background: url('../assets/images/matt-reames-xTAKAaPbFwM-unsplash.jpg')
         center/cover no-repeat;
-    }
-  }
-  form {
-    legend {
-      font-size: 2rem;
-      font-family: $font-family-raleway;
     }
   }
 }

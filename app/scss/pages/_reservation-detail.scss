@@ -2,13 +2,6 @@
 -------------------------------------------------- */
 
 @include block(reservationDetail) {
-  @include element(title) {
-    font-size: $font-size-lg;
-    font-family: $font-family-raleway;
-    @include media-breakpoint-up(md) {
-      font-size: 2rem;
-    }
-  }
   // 預定的詳細資訊
   @include element(booking) {
     @include element(toggle) {

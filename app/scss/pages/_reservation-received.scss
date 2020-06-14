@@ -2,13 +2,6 @@
 -------------------------------------------------- */
 
 @include block(reservationReceived) {
-  @include element(title) {
-    font-size: $font-size-lg;
-    font-family: $font-family-raleway;
-    @include media-breakpoint-up(md) {
-      font-size: 2rem;
-    }
-  }
   @include element(btnGroup) {
     padding-bottom: 3rem;
     @include media-breakpoint-up(md) {

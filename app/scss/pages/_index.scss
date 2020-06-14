@@ -2,15 +2,6 @@
 -------------------------------------------------- */
 
 @include block(index) {
-  // 標題
-  @include element(title) {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    font-family: $font-family-raleway;
-    @include media-breakpoint-up(md) {
-      font-size: 2rem;
-    }
-  }
   // 輪播
   .carousel {
     img {
@@ -26,18 +17,11 @@
       left: 0;
       right: 0;
       transform: translateY(-50%);
-      font-size: 2rem;
       font-family: $font-family-raleway;
       z-index: 0;
-      @include media-breakpoint-up(md) {
-        font-size: 3rem;
-      }
     }
     .material-icons {
       z-index: 1;
-      @include media-breakpoint-up(md) {
-        font-size: 3rem;
-      }
     }
   }
 
@@ -50,10 +34,8 @@
     }
     .card {
       margin-top: -3.5rem;
-      border-radius: 0.5rem;
     }
     .dropdown-toggle {
-      line-height: 1.5;
       @include text-truncate();
       &::after {
         display: none;
