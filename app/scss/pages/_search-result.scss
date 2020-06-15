@@ -2,11 +2,27 @@
 -------------------------------------------------- */
 
 @include block(searchResult) {
+  .modal-header {
+    top: 0;
+    background-color: $white;
+    z-index: 1;
+  }
+  .modal-footer {
+    bottom: 0;
+    z-index: 1;
+  }
   // 工具類
   @include element(tools) {
     .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding-top: 13px;
       padding-bottom: 12px;
+      width: 50%;
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: bold;
       &:focus {
         color: $primary;
         box-shadow: initial;
@@ -24,6 +40,9 @@
       transform: translateY(51px) !important;
     }
     .dropdown-item {
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: bold;
       &.active {
         background-color: transparent;
         color: $primary;

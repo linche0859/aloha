@@ -2,11 +2,15 @@
 -------------------------------------------------- */
 
 .search {
+  background-color: $secondary;
   .card {
     margin-left: -15px;
     margin-right: -15px;
+    line-height: $line-height-lg;
+    background-color: transparent;
   }
   .form-group {
+    position: relative;
     width: 33.33333%;
     @include media-breakpoint-up(md) {
       width: 26.08695%;
@@ -25,16 +29,62 @@
     }
   }
   .dropdown-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: left;
     font-size: 12px;
+    background-color: transparent;
+    color: $custom-gray-400;
+    @include media-breakpoint-up(md) {
+      justify-content: start;
+      background-color: $white;
+    }
     &::after {
       display: none;
     }
     &__title {
       font-size: 12px;
+      line-height: $line-height-lg;
+      color: $custom-gray-500;
+      font-weight: bold;
+    }
+    .material-icons {
+      color: $custom-gray-500;
     }
   }
   .dropdown-menu {
     font-size: 12px;
+    line-height: $line-height-lg;
     right: 0;
+  }
+  .dropdown-item {
+    display: flex;
+    &__title {
+      font-size: 1rem;
+      line-height: $line-height-lg;
+    }
+    &__text {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: $line-height-sm;
+      color: $custom-gray-400;
+    }
+  }
+  .btn {
+    line-height: $line-height-lg;
+  }
+  // 客人數列表
+  @include element(guestList) {
+    .dropdown-item {
+      justify-content: space-between;
+      align-items: center;
+      &__text {
+        font-size: $font-size-base;
+        color: $custom-gray-500;
+      }
+    }
   }
 }

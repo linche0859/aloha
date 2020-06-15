@@ -12,4 +12,10 @@
       object-fit: cover;
     }
   }
+  .nav-item {
+    border-bottom: 1px solid $secondary;
+    @include media-breakpoint-up(md) {
+      border-bottom: 0;
+    }
+  }
 }

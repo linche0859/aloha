@@ -40,6 +40,9 @@ img {
 
 // 標題
 .title {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: bold;
   font-family: $font-family-raleway;
 }
 
@@ -51,4 +54,5 @@ img {
   left: 50%;
   right: 50%;
   width: 1px;
+  background-color: $secondary;
 }
