@@ -8,21 +8,6 @@
   @include element(privacy) {
     font-size: 12px;
   }
-  @include element(remember) {
-    @include modifier(checked) {
-      display: none;
-    }
-    @include element(checkbox) {
-      &:checked {
-        & ~ .material-icons {
-          display: none;
-        }
-        & ~ .login__remember--checked {
-          display: block;
-        }
-      }
-    }
-  }
   // 地標
   @include element(location) {
     .material-icons {

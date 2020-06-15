@@ -1,0 +1,47 @@
+/* 過濾器
+-------------------------------------------------- */
+
+@include block(filter) {
+  // 標題
+  @include element(title) {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  // 預算
+  @include element(budget) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include element(item) {
+      padding: 0.5rem;
+      width: 46.51162%;
+      font-size: 14px;
+      line-height: 1.5;
+      background-color: $white;
+      border-radius: 0.25rem;
+    }
+    @include element(title) {
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: bold;
+    }
+  }
+  .border-bottom {
+    border-color: $white !important;
+  }
+  .custom-control-label {
+    display: block;
+    line-height: 1.5;
+    color: $custom-gray-400;
+    &::before,
+    &::after {
+      top: 2px;
+    }
+    &::before {
+      background-color: $secondary;
+      border-radius: 0;
+      border-color: $custom-gray-500;
+    }
+  }
+}

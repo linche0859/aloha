@@ -42,3 +42,13 @@ img {
 .title {
   font-family: $font-family-raleway;
 }
+
+// 分隔線
+.divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  width: 1px;
+}

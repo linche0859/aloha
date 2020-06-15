@@ -106,6 +106,14 @@ $utilities: map-merge(
         0: 0,
       ),
     ),
+    'border-right': (
+      responsive: true,
+      property: border-right,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      ),
+    ),
     'border-bottom': (
       responsive: true,
       property: border-bottom,

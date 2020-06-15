@@ -1,0 +1,224 @@
+---
+title: 搜尋結果
+layout: ./app/layouts/content-layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="searchResult pt-3">
+  <section class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title text-center lh-lg font-weight-bold">
+          Bangkok
+          <sup class="text-primary">3,240</sup>
+        </h2>
+      </div>
+      <div class="searchResult__tools col-12 d-flex mb-2">
+        <!-- filter -->
+        <button
+          type="button"
+          class="btn d-flex justify-content-center align-items-center w-50 fz-sm lh-lg font-weight-bold"
+          data-toggle="modal"
+          data-target="#filterModal"
+        >
+          <span class="material-icons mr-2">filter_list</span>
+          FILTER
+        </button>
+        <!-- sort -->
+        <div class="dropdown w-50">
+          <button
+            class="btn dropdown-toggle justify-content-center align-items-center w-100 fz-sm lh-lg font-weight-bold"
+            type="button"
+            id="dropdownSortButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            data-offset="0,0"
+          >
+            <span class="material-icons mr-2">sort</span>
+            SORT
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-right py-0 border-0"
+            aria-labelledby="dropdownSortButton"
+          >
+            <div class="card card-body py-3 bg-secondary">
+              <a
+                class="dropdown-item active fz-sm lh-lg font-weight-bold"
+                href="javascript:;"
+                >Recommended</a
+              >
+              <a
+                class="dropdown-item fz-sm lh-lg font-weight-bold"
+                href="javascript:;"
+                >Lowest Price</a
+              >
+              <a
+                class="dropdown-item fz-sm lh-lg font-weight-bold"
+                href="javascript:;"
+                >Best Value</a
+              >
+              <a
+                class="dropdown-item fz-sm lh-lg font-weight-bold"
+                href="javascript:;"
+                >Distance to City Center</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="divider my-2 bg-secondary"></div>
+      </div>
+      <div class="col-12">
+        <div class="padding"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- filter modal -->
+<div
+  class="modal fade"
+  id="filterModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="filterModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog m-0" role="document">
+    <div class="modal-content rounded-0">
+      <div class="modal-header border-bottom-0">
+        <h5
+          class="modal-title fz-sm lh-lg font-weight-bold"
+          id="filterModalLabel"
+        >
+          <span class="material-icons mr-2">filter_list</span>
+          FILTER
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span class="material-icons text-black">close</span>
+        </button>
+      </div>
+      <div class="modal-body filter py-0 bg-secondary">
+        <ul class="card card-body py-4 bg-secondary rounded-0">
+          <li class="mb-4 pb-4 border-bottom">
+            <h3 class="filter__title mb-3">Deals</h3>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="freeCancellation"
+              />
+              <label class="custom-control-label" for="freeCancellation"
+                >Free cancellation</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="noPrepayment"
+              />
+              <label class="custom-control-label" for="noPrepayment"
+                >No prepayment</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="specialOffers"
+              />
+              <label class="custom-control-label" for="specialOffers"
+                >Special offers</label
+              >
+            </div>
+          </li>
+          <li class="mb-4 pb-4 border-bottom">
+            <h3 class="filter__title mb-3">Popular filter</h3>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="breakfastIncluded"
+              />
+              <label class="custom-control-label" for="breakfastIncluded"
+                >Breakfast included</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="freeWiFi"
+              />
+              <label class="custom-control-label" for="freeWiFi"
+                >Free Wi-Fi</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="swimmingPool"
+              />
+              <label class="custom-control-label" for="swimmingPool"
+                >Swimming pool</label
+              >
+            </div>
+          </li>
+          <li class="mb-4 pb-4 border-bottom">
+            <h3 class="filter__title mb-3">Budget</h3>
+            <input type="range" class="custom-range mb-3" value="50" />
+            <div class="filter__budget">
+              <div class="filter__budget__item">
+                <h5 class="filter__budget__title mb-0">MIN PRICE</h5>
+                <p class="text-custom-gray-400">TWD 800</p>
+              </div>
+              <div>-</div>
+              <div class="filter__budget__item">
+                <h5 class="filter__budget__title mb-0">MAX PRICE</h5>
+                <p class="text-custom-gray-400">TWD 4,000+</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h3 class="filter__title mb-3">Stay type</h3>
+            <div class="custom-control custom-checkbox mb-2">
+              <input type="checkbox" class="custom-control-input" id="hotel" />
+              <label class="custom-control-label" for="hotel">Hotel</label>
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="apartment"
+              />
+              <label class="custom-control-label" for="apartment"
+                >Apartment</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox mb-2">
+              <input type="checkbox" class="custom-control-input" id="unique" />
+              <label class="custom-control-label" for="unique">Unique</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="hostel" />
+              <label class="custom-control-label" for="hostel">Hostel</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer position-fixed">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

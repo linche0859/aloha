@@ -16,6 +16,7 @@
 // components
 @import 'components/swiper';
 @import 'components/search';
+@import 'components/filter';
 
 // layout
 @import 'layout/header';
@@ -23,6 +24,7 @@
 
 // pages
 @import 'pages/index';
+@import 'pages/search-result';
 @import 'pages/login';
 @import 'pages/user';
 @import 'pages/reservation-detail';
