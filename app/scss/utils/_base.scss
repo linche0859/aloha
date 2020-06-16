@@ -1,6 +1,7 @@
 /* 全站設定
 -------------------------------------------------- */
 
+h2,
 h3 {
   margin-bottom: 0;
 }
@@ -41,7 +42,7 @@ img {
 // 標題
 .title {
   font-size: 1.5rem;
-  line-height: 1.5;
+  line-height: $line-height-lg;
   font-weight: bold;
   font-family: $font-family-raleway;
 }

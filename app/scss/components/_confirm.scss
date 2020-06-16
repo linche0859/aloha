@@ -4,7 +4,6 @@
 @include block(confirm) {
   background-color: $custom-gray-500;
   border-radius: 8px 8px 0 0;
-  opacity: 0.9;
   .card {
     background-color: transparent;
   }
@@ -12,7 +11,7 @@
     padding-top: 17px;
     padding-bottom: 17px;
     width: 48.78787%;
-    line-height: 1.5;
+    line-height: $line-height-lg;
     font-weight: bold;
   }
 }

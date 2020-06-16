@@ -2,12 +2,18 @@
 -------------------------------------------------- */
 
 @include block(user) {
-  @include element(title) {
-    font-family: $font-family-raleway;
-  }
-
   // 使用者資訊
   @include element(profile) {
+    .badge {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      line-height: $font-size-lg;
+      font-weight: 500;
+      .material-icons {
+        font-size: 14px;
+      }
+    }
     .card {
       img {
         width: 64px;
@@ -16,38 +22,69 @@
         object-fit: cover;
       }
     }
-    .badge {
-      font-size: 12px;
+    .card-title {
+      font-size: $font-size-base;
+      line-height: $font-size-lg;
+      font-weight: bold;
+    }
+    @include element(list) {
+      font-size: 14px;
+      line-height: $font-size-lg;
+      color: $custom-gray-400;
     }
   }
 
   // 預訂內容
   @include element(booking) {
     .nav-link {
+      line-height: $font-size-lg;
+      font-weight: bold;
       color: $custom-gray-500;
       &.active {
         background-color: transparent;
         color: $primary;
       }
     }
-    .card {
-      .card-img-top {
-        height: 226px;
-        object-fit: cover;
-        @include media-breakpoint-up(md) {
-          height: 186px;
-          border-top-right-radius: 0;
-          border-bottom-left-radius: 0.5rem;
-        }
-      }
-      .card-body {
+    .card-img-top {
+      height: 226px;
+      object-fit: cover;
+      @include media-breakpoint-up(md) {
+        height: 186px;
+        border-top-right-radius: 0;
         border-bottom-left-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
+      }
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      background-color: $secondary;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      @include media-breakpoint-up(md) {
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+      }
+      &__title {
+        margin-bottom: 0;
+        font-size: $font-size-base;
+        line-height: $font-size-lg;
+        font-weight: bold;
+      }
+      &__text {
+        font-size: 14px;
+        line-height: $font-size-lg;
+        color: $custom-gray-400;
+      }
+      &__link {
+        font-size: 14px;
+        line-height: $font-size-lg;
+        font-weight: bold;
       }
     }
   }
 
-  // 共白區域
+  // 空白區域
   @include element(empty) {
     padding-bottom: 3rem;
     @include media-breakpoint-up(md) {

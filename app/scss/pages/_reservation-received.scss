@@ -2,6 +2,20 @@
 -------------------------------------------------- */
 
 @include block(reservationReceived) {
+  @include element(list) {
+    padding: 1.5rem 0;
+    font-size: 14px;
+    line-height: $line-height-lg;
+    color: $custom-gray-400;
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-base;
+      border-bottom: 1px solid $secondary;
+    }
+    &__title {
+      font-weight: bold;
+      color: $custom-gray-600;
+    }
+  }
   @include element(btnGroup) {
     padding-bottom: 3rem;
     @include media-breakpoint-up(md) {
@@ -9,6 +23,15 @@
     }
     @include media-breakpoint-up(lg) {
       padding-bottom: 163px;
+    }
+    .btn {
+      padding: 1rem 2rem;
+      width: 100%;
+      font-weight: bold;
+      line-height: $line-height-lg;
+      @include media-breakpoint-up(md) {
+        width: auto;
+      }
     }
   }
 }

@@ -4,7 +4,9 @@
 @include block(header) {
   z-index: 1;
   .nav-link {
+    line-height: $line-height-sm;
     font-family: $font-family-roboto;
+    color: $custom-gray-600;
     .rounded-circle {
       width: 24px;
       height: 24px;

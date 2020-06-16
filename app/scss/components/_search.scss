@@ -15,7 +15,7 @@
     @include media-breakpoint-up(md) {
       width: 26.08695%;
     }
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       width: 28.1081%;
     }
     // 分隔線
@@ -28,6 +28,10 @@
       }
     }
   }
+  .btn {
+    line-height: $line-height-lg;
+    font-weight: bold;
+  }
   .dropdown-toggle {
     display: flex;
     justify-content: center;
@@ -35,6 +39,8 @@
     width: 100%;
     text-align: left;
     font-size: 12px;
+    line-height: $line-height-lg;
+    font-weight: 500;
     background-color: transparent;
     color: $custom-gray-400;
     @include media-breakpoint-up(md) {
@@ -72,9 +78,6 @@
       line-height: $line-height-sm;
       color: $custom-gray-400;
     }
-  }
-  .btn {
-    line-height: $line-height-lg;
   }
   // 客人數列表
   @include element(guestList) {

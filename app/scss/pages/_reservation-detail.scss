@@ -2,12 +2,29 @@
 -------------------------------------------------- */
 
 @include block(reservationDetail) {
+  .form-group {
+    &__text {
+      margin-bottom: 0.25rem;
+      color: $custom-gray-400;
+    }
+  }
+  .form-control {
+    height: auto;
+    line-height: $line-height-lg;
+  }
+  .btn {
+    width: 100%;
+    line-height: $line-height-lg;
+    font-weight: bold;
+  }
   // 預定的詳細資訊
   @include element(booking) {
     @include element(toggle) {
+      position: absolute;
+      opacity: 0;
       &:checked ~ label {
         border-bottom: 1px solid $white;
-        div:first-child {
+        > div:first-child {
           visibility: hidden;
         }
         .material-icons {
@@ -29,10 +46,20 @@
       }
     }
     .card {
+      font-size: 14px;
+      line-height: $line-height-lg;
+      background-color: $secondary;
+      color: $custom-gray-400;
       border-radius: 0;
       @include media-breakpoint-up(md) {
         border-radius: $card-border-radius;
       }
+    }
+    .card-title {
+      margin-bottom: 1rem;
+      font-size: $font-size-base;
+      font-weight: bold;
+      color: $custom-gray-500;
     }
     .material-icons {
       transition: all 0.3s;

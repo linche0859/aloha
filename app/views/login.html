@@ -9,7 +9,7 @@ current: index
   <section class="container h-100">
     <div class="row h-100">
       <div class="col-lg-6 d-none d-lg-block">
-        <h2 class="title mb-3 fz-3 lh-lg font-weight-extraBold">
+        <h2 class="title mb-3 fz-3 font-weight-extraBold">
           An ideal hotel makes a wonderful Trip.
         </h2>
         <p class="fz-sm lh-lg text-custom-gray-400">
@@ -19,32 +19,25 @@ current: index
       <div class="col-12 offset-md-3 offset-lg-2 col-md-6 col-lg-4">
         <form action="javascript:;" class="mb-2">
           <fieldset>
-            <legend class="title mb-3 fz-2 lh-lg font-weight-bold">
+            <legend class="title mb-3">
               Login
             </legend>
             <div class="form-group">
-              <label for="email" class="mb-1 lh-lg text-custom-gray-400"
-                >Email</label
-              >
+              <label for="email" class="form-group__text">Email</label>
               <input
                 type="email"
-                class="form-control py-3 h-auto"
+                class="form-control"
                 id="email"
                 aria-describedby="emailHelp"
               />
             </div>
             <div class="form-group mb-4">
-              <label for="password" class="mb-1 lh-lg text-custom-gray-400"
-                >Passwords</label
-              >
-              <input
-                type="password"
-                class="form-control py-3 h-auto"
-                id="password"
-              />
+              <label for="password" class="form-group__text">Passwords</label>
+              <input type="password" class="form-control" id="password" />
             </div>
+            <!-- 隱私說明 -->
             <div class="form-group">
-              <p class="login__privacy lh-lg text-custom-gray-400">
+              <p class="login__privacy">
                 By signing in or creating an account, you agree with our
                 <a href="javascript:;">Terms & Conditions</a> and
                 <a href="javascript:;">Privacy Statement</a>
@@ -62,10 +55,7 @@ current: index
                 >
               </div>
             </div>
-            <a
-              href="user.html"
-              class="btn btn-primary py-3 w-100 font-weight-bold lh-lg"
-            >
+            <a href="user.html" class="btn btn-primary">
               LOGIN
             </a>
           </fieldset>
@@ -75,12 +65,11 @@ current: index
           <a href="javascript:;" class="font-weight-bold">Sign up</a>
         </p>
       </div>
+      <!-- 地標 -->
       <div
-        class="login__location offset-md-3 offset-lg-0 col-md-6 d-none d-md-flex justify-content-center justify-content-lg-start align-items-end pb-4"
+        class="offset-md-3 offset-lg-0 col-md-6 d-none d-md-flex justify-content-center justify-content-lg-start align-items-end pb-4"
       >
-        <div
-          class="d-flex align-items-center py-2 px-3 bg-custom-gray-600 text-white fz-sm lh-lg rounded"
-        >
+        <div class="login__location">
           <span class="material-icons mr-2">
             place
           </span>

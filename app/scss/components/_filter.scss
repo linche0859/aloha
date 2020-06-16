@@ -7,8 +7,11 @@
   }
   .custom-control-label {
     display: block;
-    line-height: 1.5;
+    line-height: $line-height-lg;
     color: $custom-gray-400;
+    @include media-breakpoint-up(md) {
+      font-size: 14px;
+    }
     &::before,
     &::after {
       top: 2px;
@@ -20,28 +23,36 @@
     }
   }
   // 標題
-  @include element(title) {
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: bold;
+  .title {
+    font-size: $font-size-base !important;
+    font-family: $font-family-opensans;
   }
   // 預算
   @include element(budget) {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     @include element(item) {
       padding: 0.5rem;
       width: 46.51162%;
-      font-size: 14px;
-      line-height: 1.5;
+      font-size: 12px;
+      line-height: $line-height-lg;
       background-color: $white;
+      color: $custom-gray-400;
       border-radius: 0.25rem;
+      @include media-breakpoint-up(md) {
+        width: 50%;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 14px;
+      }
     }
     @include element(title) {
       font-size: 12px;
-      line-height: 1.5;
+      line-height: $line-height-lg;
       font-weight: bold;
+      color: $custom-gray-500;
     }
   }
   // 評分
@@ -49,6 +60,7 @@
     .custom-control-label {
       display: flex;
       align-items: center;
+      color: $custom-gray-400;
     }
     .material-icons {
       font-size: 18px;

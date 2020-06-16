@@ -39,6 +39,10 @@
     border-radius: 50%;
   }
 }
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+}
 .swiper-button-next {
   right: 0;
 }

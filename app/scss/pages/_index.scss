@@ -2,9 +2,15 @@
 -------------------------------------------------- */
 
 @include block(index) {
+  .title {
+    @include media-breakpoint-up(md) {
+      font-size: 2rem;
+    }
+  }
   // 輪播
   .carousel {
     img {
+      width: 100%;
       height: 315px;
       object-fit: cover;
       @include media-breakpoint-up(md) {
@@ -20,39 +26,68 @@
       font-family: $font-family-raleway;
       z-index: 0;
     }
+    .title {
+      padding: 0 2rem;
+      font-size: 2rem;
+      color: $custom-gray-700;
+      @include media-breakpoint-up(md) {
+        padding: 0;
+        font-size: 3rem;
+        font-weight: 900;
+      }
+    }
     .material-icons {
       z-index: 1;
     }
   }
 
   // 搜尋
-  @include element(search) {
+  .search {
+    background-color: transparent;
+    .card {
+      margin-top: -3.5rem;
+      margin-left: 0;
+      margin-right: 0;
+      background-color: $secondary;
+    }
     .form-group {
+      margin-bottom: 1rem;
+      width: 100%;
+      @include media-breakpoint-up(md) {
+        width: 100%;
+      }
       @include media-breakpoint-up(lg) {
+        margin-right: 1rem;
+        margin-bottom: 0;
         width: 25.21739%;
       }
     }
-    .card {
-      margin-top: -3.5rem;
-    }
     .dropdown-toggle {
-      @include text-truncate();
-      &::after {
-        display: none;
-      }
-    }
-    .dropdown-menu {
-      right: 0;
-    }
-    button[type='submit'] {
-      padding-top: 17px;
-      padding-bottom: 17px;
+      justify-content: flex-start;
+      padding: 1rem;
+      font-size: $font-size-base;
+      background-color: $white;
     }
   }
 
   @include element(top) {
-    img {
+    .nav-link {
+      padding: 0 1rem;
+      font-size: 20px;
+      line-height: 1.8;
+      font-weight: bold;
+      color: $custom-gray-400;
+      border-bottom: 2px solid $secondary;
+      @include media-breakpoint-up(md) {
+        padding: 0 1.5rem;
+        font-size: 1.5rem;
+        line-height: $line-height-lg;
+      }
+    }
+    .card-img-top {
       height: 164px;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
       object-fit: cover;
       @include media-breakpoint-up(md) {
         height: 185px;
@@ -61,74 +96,102 @@
         height: 175px;
       }
     }
-    .nav-link {
-      font-size: 20px;
-      line-height: 1.8;
-      color: $custom-gray-400;
-      border-bottom: 2px solid $secondary;
-    }
-    .card-img-top {
-      border-bottom-left-radius: 0.5rem;
-      border-bottom-right-radius: 0.5rem;
+    .card-title {
+      margin-bottom: 0.5rem;
+      font-size: $font-size-base;
+      line-height: $line-height-lg;
+      font-weight: bold;
     }
     .card-text {
+      font-size: 14px;
+      line-height: $line-height-lg;
+      color: $custom-gray-400;
       .material-icons {
         font-size: 18px;
+        color: $custom-gray-500;
       }
     }
-    // 觀看數
-    @include element(reviews) {
+    // 文字較小狀態
+    @include modifier(small) {
       font-size: 12px;
-    }
-    // 售價
-    @include element(price) {
-      del {
-        font-size: 12px;
-      }
+      line-height: $line-height-base;
+      color: $custom-gray-300;
     }
   }
 
   // 熱門景點
   @include element(popular) {
-    img {
+    .card {
+      position: relative;
+      color: $white;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: transparent
+          linear-gradient(270deg, #00000000 0%, #000000 100%);
+        border-radius: 0.5rem;
+      }
+    }
+    .card-img {
       height: 78px;
       object-fit: cover;
     }
-    .card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: transparent
-        linear-gradient(270deg, #00000000 0%, #000000 100%);
-      border-radius: 0.5rem;
+    .card-img-overlay {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     .card-title {
       font-size: 12px;
+      line-height: $line-height-base;
+      font-weight: bold;
+      color: $custom-gray-100;
     }
     .card-text {
+      font-size: 1.5rem;
+      line-height: $line-height-lg;
+      font-weight: bold;
       font-family: $font-family-raleway;
     }
   }
 
   // 取得靈感
   @include element(inspiration) {
-    img {
-      height: 181px;
-      object-fit: cover;
+    .btn {
+      padding: 0.5rem 1rem;
+      font-size: 14px;
+      line-height: $line-height-lg;
+      font-weight: bold;
     }
     .card-img-top {
+      margin-bottom: 1rem;
+      height: 181px;
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
+      object-fit: cover;
+    }
+    .card-body {
+      line-height: $line-height-lg;
     }
     .card-title {
+      margin-bottom: 0.5rem;
       font-size: 20px;
       font-family: $font-family-raleway;
+      font-weight: bold;
+      @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+      }
     }
     .card-text {
       font-size: 12px;
+      color: $custom-gray-400;
+      @include media-breakpoint-up(md) {
+        font-size: $font-size-base;
+      }
     }
   }
 }

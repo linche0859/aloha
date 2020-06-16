@@ -3,7 +3,7 @@
 
 @include block(footer) {
   .btn {
-    line-height: 1.5;
+    line-height: $line-height-lg;
     font-weight: bold;
   }
   // 贊助
@@ -18,6 +18,8 @@
     }
     .form-control {
       padding: 1rem 0 18px 21px;
+      height: auto;
+      line-height: $line-height-lg;
       &::placeholder {
         color: $custom-gray-400;
       }
@@ -40,6 +42,21 @@
       padding-top: 26px;
       padding-bottom: 26px;
     }
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: $line-height-lg;
+      background-color: transparent;
+      color: $custom-gray-400;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+      .material-icons {
+        color: $custom-gray-500;
+      }
+    }
     @include element(list) {
       display: flex;
       justify-content: center;
@@ -55,21 +72,6 @@
       font-size: 14px;
       line-height: $line-height-lg;
       color: $custom-gray-400;
-    }
-    .dropdown-toggle {
-      display: flex;
-      align-items: center;
-      font-size: 14px;
-      line-height: $line-height-lg;
-      background-color: transparent;
-      color: $custom-gray-400;
-      border: none;
-      &:focus {
-        outline: none;
-      }
-      .material-icons {
-        color: $custom-gray-500;
-      }
     }
   }
   // copyright
