@@ -8,6 +8,10 @@
     margin-right: -15px;
     line-height: $line-height-lg;
     background-color: transparent;
+    @include media-breakpoint-up(md) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   .form-group {
     position: relative;
