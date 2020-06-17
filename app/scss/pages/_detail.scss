@@ -1,0 +1,58 @@
+/* 訂房詳細資訊
+-------------------------------------------------- */
+
+@include block(detail) {
+  // 輪播
+  .carousel {
+    .carousel-item {
+      &__img {
+        display: block;
+        width: 100%;
+        height: 247px;
+        object-fit: cover;
+      }
+    }
+    .material-icons {
+      color: $white;
+    }
+  }
+  // 房間相簿
+  @include element(album) {
+    .btn {
+      padding: 0.5rem;
+      width: 100%;
+      font-size: 12px;
+      line-height: $line-height-lg;
+      font-weight: bold;
+      border: none;
+      @include media-breakpoint-up(lg) {
+        padding: 1rem;
+        line-height: 22px;
+        font-size: $font-size-base;
+      }
+    }
+    @include element(img) {
+      width: 100%;
+      border-radius: 0.25rem;
+      object-fit: cover;
+      @include modifier(main) {
+        height: 268px;
+        @include media-breakpoint-up(lg) {
+          height: 434px;
+        }
+      }
+      @include modifier(second) {
+        height: 132px;
+        @include media-breakpoint-up(lg) {
+          height: 213px;
+        }
+      }
+      @include modifier(small) {
+        height: 93px;
+        @include media-breakpoint-up(lg) {
+          height: 151px;
+        }
+      }
+    }
+  }
+}
