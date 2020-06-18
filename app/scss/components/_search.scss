@@ -85,6 +85,7 @@
   }
   // 客人數列表
   @include element(guestList) {
+    z-index: 9999;
     .dropdown-item {
       justify-content: space-between;
       align-items: center;

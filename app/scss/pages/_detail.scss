@@ -55,4 +55,63 @@
       }
     }
   }
+  // 房間描述
+  @include element(description) {
+    font-size: 14px;
+    line-height: $line-height-lg;
+    color: $custom-gray-400;
+    .title {
+      font-size: 2rem;
+      color: $custom-gray-500;
+    }
+    .material-icons {
+      font-size: 18px;
+      color: $custom-gray-500;
+    }
+    @include modifier(link) {
+      display: block;
+      font-size: 12px;
+      @include media-breakpoint-up(md) {
+        font-size: 14px;
+      }
+    }
+  }
+  // 選擇房間
+  @include element(selectRoom) {
+    line-height: $line-height-lg;
+    color: $custom-gray-400;
+    .card {
+      border: solid $secondary;
+      border-width: 1px 1px 0 0;
+      border-radius: 0.25rem;
+    }
+    .card-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 0.25rem 0 0 0;
+      object-fit: cover;
+    }
+    .card-body {
+      padding-left: 0.5rem;
+      padding-right: 14px;
+    }
+    .card-title {
+      margin-bottom: 0.25rem;
+      font-size: $font-size-base;
+      font-weight: bold;
+      color: $custom-gray-500;
+    }
+    // 房間功能
+    @include element(function) {
+      display: flex;
+      margin-bottom: 0.5rem;
+      .material-icons {
+        margin-right: 0.5rem;
+        font-size: 18px;
+      }
+    }
+    @include modifier(small) {
+      font-size: 12px;
+    }
+  }
 }

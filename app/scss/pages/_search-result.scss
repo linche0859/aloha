@@ -139,6 +139,10 @@
         width: auto;
         font-size: $font-size-base;
       }
+      &.active {
+        background-color: transparent;
+        color: $primary;
+      }
     }
     .swiper-wrapper {
       flex-direction: column;
@@ -148,11 +152,9 @@
     }
     .swiper-slide {
       justify-content: flex-start;
+      width: auto !important;
       background-color: transparent;
       color: $custom-gray-500;
-      &.active {
-        color: $primary;
-      }
     }
   }
   // 查詢結果列表
