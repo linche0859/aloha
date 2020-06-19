@@ -2,10 +2,6 @@
 -------------------------------------------------- */
 
 @include block(footer) {
-  .btn {
-    line-height: $line-height-lg;
-    font-weight: bold;
-  }
   // 贊助
   @include element(subscribe) {
     background-color: $secondary;
@@ -25,6 +21,7 @@
       }
     }
     .btn {
+      position: absolute;
       right: 0;
       bottom: 0;
       padding-top: 17px;

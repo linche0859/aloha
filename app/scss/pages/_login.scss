@@ -2,17 +2,21 @@
 -------------------------------------------------- */
 
 @include block(login) {
+  position: relative;
+  padding-top: 1.5rem;
   @include media-breakpoint-up(md) {
     margin-top: -72px;
+    height: 100vh;
+    padding-top: 6rem;
   }
   .title {
     font-size: 2rem;
   }
   .form-group {
+    line-height: $line-height-lg;
+    color: $custom-gray-400;
     &__text {
       margin-bottom: 0.25rem;
-      line-height: $line-height-lg;
-      color: $custom-gray-400;
     }
   }
   .form-control {
@@ -24,16 +28,12 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
-    font-weight: bold;
-    line-height: $line-height-lg;
   }
   // 隱私說明
   @include element(privacy) {
     font-size: 12px;
-    line-height: $line-height-lg;
-    color: $custom-gray-400;
   }
-  // 地標
+  // 地標圖示
   @include element(location) {
     display: flex;
     align-items: center;
@@ -44,16 +44,22 @@
     color: $white;
     border-radius: 0.25rem;
     .material-icons {
+      margin-right: 0.5rem;
       font-size: 18px;
     }
   }
   // 背景圖
   @include element(background) {
+    position: absolute;
+    display: none;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: -1;
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
     .bg-cover {
       background: url('../assets/images/matt-reames-xTAKAaPbFwM-unsplash.jpg')
         center/cover no-repeat;

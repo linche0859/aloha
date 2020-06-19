@@ -19,6 +19,7 @@
     &::after {
       top: 2px;
     }
+    // 打勾的框框
     &::before {
       background-color: $secondary;
       border-radius: 0;
@@ -50,7 +51,6 @@
       @include media-breakpoint-up(lg) {
         width: 46.51162%;
         font-size: 14px;
-        border-radius: 0.25rem;
       }
       &:nth-child(1) {
         @include media-breakpoint-up(md) {

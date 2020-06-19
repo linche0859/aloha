@@ -14,11 +14,10 @@
   }
   .btn {
     width: 100%;
-    line-height: $line-height-lg;
-    font-weight: bold;
   }
   // 預定的詳細資訊
   @include element(booking) {
+    line-height: $line-height-lg;
     @include element(toggle) {
       position: absolute;
       opacity: 0;

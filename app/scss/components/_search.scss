@@ -24,6 +24,7 @@
     }
     // 分隔線
     .divider {
+      // 手機板分隔線在最右方
       left: auto;
       right: 0;
       @include media-breakpoint-up(lg) {
@@ -31,10 +32,6 @@
         right: 50%;
       }
     }
-  }
-  .btn {
-    line-height: $line-height-lg;
-    font-weight: bold;
   }
   .dropdown-toggle {
     display: flex;

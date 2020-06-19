@@ -27,6 +27,7 @@
       z-index: 0;
     }
     .title {
+      // 推擠讓文字對齊
       padding: 0 2rem;
       font-size: 2rem;
       color: $custom-gray-700;
@@ -37,7 +38,11 @@
       }
     }
     .material-icons {
+      color: $white;
       z-index: 1;
+      @include media-breakpoint-up(md) {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -112,7 +117,7 @@
       }
     }
     // 文字較小狀態
-    @include modifier(small) {
+    @include modifier(textSmall) {
       font-size: 12px;
       line-height: $line-height-base;
       color: $custom-gray-300;
@@ -164,8 +169,6 @@
     .btn {
       padding: 0.5rem 1rem;
       font-size: 14px;
-      line-height: $line-height-lg;
-      font-weight: bold;
     }
     .card-img-top {
       margin-bottom: 1rem;
@@ -180,6 +183,7 @@
     .card-title {
       margin-bottom: 0.5rem;
       font-size: 20px;
+      line-height: $line-height-lg;
       font-family: $font-family-raleway;
       font-weight: bold;
       @include media-breakpoint-up(md) {
