@@ -4,40 +4,55 @@
 @include block(user) {
   // 使用者資訊
   @include element(profile) {
+    margin-bottom: 3rem;
+    .title {
+      margin-right: 0.5rem;
+      @include media-breakpoint-up(md) {
+        margin-right: 1rem;
+      }
+    }
     .badge {
+      padding: 0.25rem 0.5rem;
       display: flex;
       align-items: center;
       font-size: 12px;
-      line-height: $font-size-lg;
+      line-height: $line-height-lg;
       font-weight: 500;
       .material-icons {
+        margin-right: 0.25rem;
         font-size: 14px;
       }
     }
     .card {
+      padding: 1rem;
+      font-size: 14px;
+      line-height: $line-height-lg;
+      color: $custom-gray-400;
       img {
         width: 64px;
         height: 64px;
         border-radius: 0.5rem;
         object-fit: cover;
       }
+      .material-icons {
+        font-size: 18px;
+      }
     }
     .card-title {
+      margin-bottom: 1.5rem;
       font-size: $font-size-base;
-      line-height: $font-size-lg;
       font-weight: bold;
-    }
-    @include element(list) {
-      font-size: 14px;
-      line-height: $font-size-lg;
-      color: $custom-gray-400;
+      color: $custom-gray-500;
     }
   }
 
   // 預訂內容
   @include element(booking) {
+    .title {
+      margin-bottom: 1.5rem;
+    }
     .nav-link {
-      line-height: $font-size-lg;
+      line-height: $line-height-lg;
       font-weight: bold;
       color: $custom-gray-500;
       &.active {
@@ -57,29 +72,28 @@
     .card-body {
       display: flex;
       flex-direction: column;
+      padding: 1.5rem;
+      font-size: 14px;
+      line-height: $line-height-lg;
       background-color: $secondary;
+      color: $custom-gray-400;
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
       @include media-breakpoint-up(md) {
         flex-direction: row;
         justify-content: space-between;
+        padding: 0 1.5rem;
         background-color: transparent;
       }
-      &__title {
-        margin-bottom: 0;
+      // 文字粗體
+      &__textBold {
         font-size: $font-size-base;
-        line-height: $font-size-lg;
         font-weight: bold;
+        color: $custom-gray-500;
       }
-      &__text {
-        font-size: 14px;
-        line-height: $font-size-lg;
-        color: $custom-gray-400;
-      }
-      &__link {
-        font-size: 14px;
-        line-height: $font-size-lg;
-        font-weight: bold;
+      .material-icons {
+        margin-right: 1rem;
+        color: $black;
       }
     }
   }
