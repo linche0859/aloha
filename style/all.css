@@ -17160,7 +17160,7 @@ img {
   }
 }
 
-.searchResult__price--del {
+.searchResult__price--textDel {
   font-size: 12px;
   font-weight: normal;
   text-decoration: line-through;
@@ -17168,13 +17168,13 @@ img {
 }
 
 @media (min-width: 768px) {
-  .searchResult__price--del {
+  .searchResult__price--textDel {
     font-size: 14px;
   }
 }
 
 @media (min-width: 992px) {
-  .searchResult__price--del {
+  .searchResult__price--textDel {
     font-size: 1rem;
   }
 }
@@ -17792,7 +17792,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     background-color: transparent;
   }
 }
